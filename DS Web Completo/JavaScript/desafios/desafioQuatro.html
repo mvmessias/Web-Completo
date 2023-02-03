@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <script>
+
+        var numero = prompt("Digite um numero: ");
+        numero = parseInt(numero);
+        console.log(numero)
+
+        var numero2 = prompt("Digite um outro numero: ");
+        numero2 = parseInt(numero);
+        console.log(numero2)
+
+        var operacao = prompt("Qual será a operação? [soma / subtração]");
+        console.log(operacao)
+
+        function calcular(numero, numero2, operacao){
+            if(operacao == "soma"){
+                var resultado = numero + numero2;
+                console.log(resultado);
+            } else if(operacao = "subtração"){
+                var resultado = numero - numero2;
+                console.log(resultado);
+            }
+            
+            return resultado;
+            
+        }
+        
+        document.write("O resultado é: " + calcular(numero, numero2, operacao));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

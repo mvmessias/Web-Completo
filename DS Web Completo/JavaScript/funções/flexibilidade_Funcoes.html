@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <script>
+        function soma(a, b){
+            // corrigindo o problema de undefined quando passamos apenas um paramentro
+            //b = b === undefined ? 0 : b
+
+            return a + b 
+        }
+        // flexibilidade de paramentros
+        console.log(soma(7,7))
+        console.log(soma(7,7,9,15)) // desconsidera os parametros adicionais por ter sido definido na função somente dois paramentro
+        console.log(soma(7))
+        console.log(soma())
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

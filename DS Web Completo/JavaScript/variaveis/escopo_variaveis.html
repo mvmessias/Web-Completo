@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de Variaveis</title>
+    <script>
+        // 3 escopos: global, função e o bloco
+
+        // Escopo global
+        var serie = "Friends";
+
+        // escopo de bloco
+        if(true){
+        // variaveis decalradas dentro de blocos sofrem elevação e podem ser acessadas ou vistas pelo escopo global
+            var serie2 = "Game of Thrones"
+            document.write(serie);
+        }
+        document.write(serie2);
+
+        document.write("<br/>");
+
+        function x(){
+        // varaiveis declaradas dentro da funções somente são vistas dentro da função em que foi declarada
+            var serie3 = "The Walking Dead"
+            document.write(serie);
+            document.write(serie2);
+
+            /* 
+            Se uma variavel estiver dentro de um bloco e 
+            Esse bloco estiver dentro da função, 
+            A função consegue acessar essa variavel 
+            Porque todas variaveis dentro de blocos sofrem uma elevação,
+            podendo ser acessadas, porém nesse caso o acesso é somente dentro da função
+            */
+        }
+
+        x();
+        document.write("<br/>");
+        document.write(serie3)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

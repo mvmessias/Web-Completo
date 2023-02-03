@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script>
+			function mudaCor(recebeValor){
+				document.getElementById("quadrado").style.backgroundColor = recebeValor
+			}	
+		</script>
+	</head>
+	<body>
+		<h3>Muda cor</h3>
+		<button onclick="mudaCor('red')">Vermelho</button>
+		<button onclick="mudaCor('blue')">Azul</button>
+		<button onclick="mudaCor('yellow')">Amarelo</button>
+		<hr>
+		<div style="border: 1px solid black; height:120px; width: 120px;" id="quadrado"></div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM estilos</title>
+    <script>
+        
+        function mudarCor(alteraCor){
+            document.getElementById('fundo').style.background = alteraCor
+
+        }
+    </script>
+</head>
+<body>
+    <h3>Manipulando estilos</h3>
+    <button onclick="mudarCor('green')">Verde</button>
+    <button onclick="mudarCor('red')">Vermelho</button>
+    <button onclick="mudarCor('yellow')">Amarelo</button>
+    <hr>
+    <div style="height: 100px; width: 100px; border: 1px solid black;" id="fundo"></div>
+
+<!--
+    <script>
+        
+        function modificaEstilo(corDeFundo){
+            document.getElementById('quadrado').style.background = corDeFundo
+        }
+    </script>
+</head>
+<body>
+    <h3>Manipulando estilo</h3>
+    <button onclick="modificaEstilo('#FF0000')" id="BtnVermelho">Vermelho</button>
+    <button onclick="modificaEstilo('#00FF00')" id="BtnVerde">Verde</button>
+    <button onclick="modificaEstilo('#0000FF')" id="BtnAzul">Azul</button>
+    <hr>
+    <div style="height: 100px; width: 100px; border: 1px solid black;" id="quadrado"></div>-->
+
+</body>
+</html>

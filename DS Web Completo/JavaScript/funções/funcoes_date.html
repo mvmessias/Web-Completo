@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Date</title>
+    <script>
+        /*
+
+        var data = new Date();
+
+        // document.write(data.getDate()) // mostrando o dia
+        // document.write(data.getMonth() + 1) // retorna meses começando do zero até 11 precisando somar 1 para ficar 1 ao 12
+        // document.write(data.getDate() + "/" + (data.getMonth() + 1) + "/" + (data.getFullYear())) // mostrando a data completa
+        
+        
+        // adicionar ou remover dias 
+        document.write(data.toString()); // toString() tras a representação textual desse objeto
+        // ajustando os valores atualizando com + ou - pq começa do 0 
+        data.setDate(data.getDate() + 1); // set para modificar e get para trazer o valor
+        document.write("<hr/>");
+        document.write(data.toString());
+
+        document.write("<br/> <br/> <hr/> <br/> "); // quebra de linha
+
+        // adicionar ou remover meses 
+        document.write(data.toString()); // toString() tras a representação textual desse objeto
+        // ajustando os valores atualizando com + ou - pq começa do 0 
+        data.setMonth(data.getMonth() + 1); // set para modificar e get para trazer o valor
+        document.write("<hr/>");
+        document.write(data.toString());
+
+        document.write("<br/> <br/> <hr/> <br/> "); // quebra de linha
+
+        // adicionar ou remover anos 
+        document.write(data.toString()); // toString() tras a representação textual desse objeto
+        // ajustando os valores atualizando com + ou - pq começa do 0 
+        data.setFullYear(data.getFullYear() + 1); // set para modificar e get para trazer o valor
+        document.write("<hr/>");
+        document.write(data.toString());
+
+        */
+
+
+        // 15/01/2017
+        var data1 = new Date(2017, 0, 15);
+
+        // 23/02/2017
+        var data2 = new Date(2017, 1, 23);
+
+
+        // toString() tras a representação textual desse objeto
+        document.write(data1.toString());
+        document.write("<br/> <hr/>") // quebra de linha
+        document.write(data2.toString());
+
+        // converter datas para algo que possamos calcular
+        document.write("<br/> <br/> <hr/>"); // quebra de linha
+        document.write(data1.getTime());
+        document.write("<hr/>") // quebra de linha
+        document.write(data2.getTime());
+
+        // 1 de janeiro de 1970 - Data essa em que os sistemas Unix começam a contar os minutos
+    
+        document.write("<br/> <br/> <hr/>"); // quebra de linha
+        // encontrar a qtde de milissegundos entre data1 e data2
+        var milisegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime()); // abs tras um valor absoluto e não negativo
+        document.write(milisegundos_entre_datas); 
+
+        // 1 dia tem 24h, cada hora tem 60 minutos, 
+        // cada minuto tem 60 segundos e 
+        // cada segundo tem 1000 milisegundos
+        // então quantos milisegundos existem em um dia?
+        var milisegundos_por_dia = (1*24*60*60*1000)
+        document.write(" 1 dia tem:  " + milisegundos_por_dia + " milisegundos");
+
+        document.write("<br/> <br/> <hr/>"); // quebra de linha
+        document.write("A diferença entre data1 e data2 é de " + Math.ceil( milisegundos_entre_datas / milisegundos_por_dia) + " dia(s)" );
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

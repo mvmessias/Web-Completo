@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuantes</title>
+    <style>
+        #principal{
+            border: 5px solid red;
+            background: green;
+        }
+
+        .conteudo{
+            background: blue;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            float: right;
+            
+        }
+
+        
+        /*.conteudo-zero{
+            background: red;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }*/
+        
+        .clear{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div class="conteudo">Conteúdo 1</div>
+        <div class="conteudo">Conteúdo 2</div>
+        <div class="conteudo">Conteúdo 3</div>
+
+        <p class="clear">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto omnis temporibus eveniet cumque beatae eligendi sapiente ipsam culpa provident quos, doloremque quia, nisi officiis ex quo, perferendis repellat necessitatibus expedita?
+        </p>
+
+        <!--<div class="clear"></div> -->
+    </div>
+</body>
+</html>

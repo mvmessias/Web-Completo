@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Eventos</title>
+    <script>
+
+        function acao1(){
+            alert("Elemento foi clicado");
+        }
+
+        function acao2(){
+            alert("O cursor do mouse deixou a região do elemento");
+        }
+
+    </script>
+</head>
+<body>
+    <!-- Elementos com eventos (os eventos são atributos dos elementos HTML)-->
+    <!--
+        onclick = quando clica uma vez, o evento é disparado
+        ondblclick = quando clica duas vezes, o evento é disparado
+        onmouseup = quando clica, segura e solta, o evento é disparado
+        onmouseover = quando o cursor do mouse passa por cima do elemento, o evento é disparado
+        onmouseout = quando o cursor do mouse sai de cima do elemento, o evento é disparado
+    -->
+    <!-- Exemplos -->
+    <!-- <div onclick="acao()" style="background: grey; height: 150px; width: 150px;"></div> -->
+    <!-- <div ondblclick="acao()" style="background: grey; height: 150px; width: 150px;"></div> -->
+    <!-- <div onmouseup="acao()" style="background: grey; height: 150px; width: 150px;"></div> -->
+    <!-- <div onmouseover="acao()" style="background: grey; height: 150px; width: 150px;"></div> -->
+    <!-- <div onmouseout="acao()" style="background: grey; height: 150px; width: 150px;"></div> -->
+
+    <!-- Podemos combinar os eventos -->
+    <div onclick="acao1()" onmouseout="acao2()" style="background: grey; height: 150px; width: 150px;"></div>
+</body>
+</html>
