@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 Abstração Sofá</title>
+    <script>
+        class Sofa{
+            constructor(qtde_pe, qtde_assentos, cor){
+                this.qtde_pe = qtde_pe
+                this.qtde_assentos = qtde_assentos
+                this.cor = cor
+            }
+            AssentoSofaOuPoltrona(){
+                if(this.qtde_assentos >= 2){
+                    console.log("é um sofá")
+                }else{
+                    console.log("é uma poltrona")
+                }
+            }
+        }
+
+        let sofas = Array()
+            sofas.push(new Sofa(4, 3, 'azul'))
+            sofas.push(new Sofa(1, 1, 'vermelha'))
+            console.log(sofas)
+
+
+            let sofa = new Sofa(1, 2, 'vermelha')
+            sofa.AssentoSofaOuPoltrona()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

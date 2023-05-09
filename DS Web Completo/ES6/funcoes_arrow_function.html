@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções com paramentros</title>
+    <script>
+    /*
+        let quadrado = function(x = 5){ // simplificação da function
+            return x * x
+        }
+
+        let quadrado = (x) => { // para um ou mais parametros com simplificação anonima
+            return x * x
+        }
+
+        let quadrado = x => { // para um parametro
+            return x * x
+        }
+
+        let quadrado = (x) => x * x // return implícito
+    */
+        /*
+        let parOuImpar = function(numero){
+            if(numero % 2 === 0){
+                return 'par'
+            }else{
+                return 'impar'
+            }
+        }
+        */
+
+        /*
+        let parOuImpar = numero => { //arrow function
+            if(numero % 2 === 0){
+                return 'par'
+            }else{
+                return 'impar'
+            }
+        }
+        */
+        
+        //função anonima   //arrow function   //return implícito
+        let parOuImpar = numero => numero % 2 === 0 ? 'par' : 'impar'
+          
+        document.write(parOuImpar(155))
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
