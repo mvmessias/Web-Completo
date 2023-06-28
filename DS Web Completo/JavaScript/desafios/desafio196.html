@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio ex196</title>
+    <script>
+        function aplicaCor(){
+            document.getElementById('campoTexto').style.background = 'yellow';
+        }
+
+        function recuperaValor(){
+            var valor = document.getElementById('campoTexto').value
+            
+            if(valor.length < 3){
+                document.getElementById('campoTexto').style.background = 'red';
+            }else{
+                document.getElementById('campoTexto').style.background = 'green';
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="campoTexto" id="campoTexto" onfocus="aplicaCor()" onblur="recuperaValor()">
+</body>
+</html>
