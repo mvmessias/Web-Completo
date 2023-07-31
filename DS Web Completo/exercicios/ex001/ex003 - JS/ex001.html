@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+        function recuperaValor(){
+            var valorCampo = document.getElementById('campo_texto').value
+
+            if(valorCampo === ''){
+                alert("Informe um valor válido")
+            }else{
+                if(objetos.indexOf(valorCampo) !== -1){
+                    alert("Objeto já foi adicionado")
+                }else{
+                    objetos.push(valorCampo)
+
+                    console.log(objetos) 
+
+                    document.getElementById('campo_texto').value = ''  
+                }
+            }       
+        }
+        
+        function ordenarValores(){
+            objetos.sort()
+
+            console.log(objetos)
+        }
+        
+    </script>
+</head>
+<body>
+    <input id="campo_texto" type="text"> <button onclick="recuperaValor()">Adicionar</button> <button onclick="ordenarValores()">Ordenar</button>
+</body>
+</html>
